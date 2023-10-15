@@ -9,6 +9,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
 @Data
@@ -23,7 +24,7 @@ public class UserModel {
     private String username;
     private String name;
     private String password;
-    
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 
